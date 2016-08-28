@@ -1,0 +1,1434 @@
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"control.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.control_drive_1A,"ax",%progbits
+  18              		.align	2
+  19              		.global	control_drive_1A
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	control_drive_1A, %function
+  23              	control_drive_1A:
+  24              	.LFB2:
+  25              		.file 1 ".\\control.c"
+   1:.\control.c   **** /* ========================================
+   2:.\control.c   ****  *
+   3:.\control.c   ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\control.c   ****  * All Rights Reserved
+   5:.\control.c   ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\control.c   ****  *
+   7:.\control.c   ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\control.c   ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\control.c   ****  *
+  10:.\control.c   ****  * ========================================
+  11:.\control.c   **** */
+  12:.\control.c   **** 
+  13:.\control.c   **** #include "control.h"
+  14:.\control.c   **** 
+  15:.\control.c   **** void control_drive_1A(const uint8 pwm) {
+  26              		.loc 1 15 0
+  27              		.cfi_startproc
+  28              	.LVL0:
+  29 0000 10B5     		push	{r4, lr}
+  30              		.cfi_def_cfa_offset 8
+  31              		.cfi_offset 4, -8
+  32              		.cfi_offset 14, -4
+  33 0002 041C     		mov	r4, r0
+  16:.\control.c   ****     Control_Reg_1_Write((Control_Reg_1_Read()&CONTROL_MASK_1)|CONTROL_DRIVE_1A);
+  34              		.loc 1 16 0
+  35 0004 FFF7FEFF 		bl	Control_Reg_1_Read
+  36              	.LVL1:
+  37 0008 0F23     		mov	r3, #15
+  38 000a 9843     		bic	r0, r3
+  39 000c 0923     		mov	r3, #9
+  40 000e 1843     		orr	r0, r3
+  41 0010 C0B2     		uxtb	r0, r0
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 2
+
+
+  42 0012 FFF7FEFF 		bl	Control_Reg_1_Write
+  43              	.LVL2:
+  17:.\control.c   ****     PWM_1_WriteCompare(pwm);
+  44              		.loc 1 17 0
+  45 0016 201C     		mov	r0, r4
+  46 0018 FFF7FEFF 		bl	PWM_1_WriteCompare
+  47              	.LVL3:
+  18:.\control.c   **** }
+  48              		.loc 1 18 0
+  49              		@ sp needed
+  50 001c 10BD     		pop	{r4, pc}
+  51              		.cfi_endproc
+  52              	.LFE2:
+  53              		.size	control_drive_1A, .-control_drive_1A
+  54 001e C046     		.section	.text.control_drive_1B,"ax",%progbits
+  55              		.align	2
+  56              		.global	control_drive_1B
+  57              		.code	16
+  58              		.thumb_func
+  59              		.type	control_drive_1B, %function
+  60              	control_drive_1B:
+  61              	.LFB3:
+  19:.\control.c   **** 
+  20:.\control.c   **** void control_drive_1B(const uint8 pwm) {
+  62              		.loc 1 20 0
+  63              		.cfi_startproc
+  64              	.LVL4:
+  65 0000 10B5     		push	{r4, lr}
+  66              		.cfi_def_cfa_offset 8
+  67              		.cfi_offset 4, -8
+  68              		.cfi_offset 14, -4
+  69 0002 041C     		mov	r4, r0
+  21:.\control.c   ****     Control_Reg_1_Write((Control_Reg_1_Read()&CONTROL_MASK_1)|CONTROL_DRIVE_1B);
+  70              		.loc 1 21 0
+  71 0004 FFF7FEFF 		bl	Control_Reg_1_Read
+  72              	.LVL5:
+  73 0008 0F23     		mov	r3, #15
+  74 000a 9843     		bic	r0, r3
+  75 000c 0623     		mov	r3, #6
+  76 000e 1843     		orr	r0, r3
+  77 0010 C0B2     		uxtb	r0, r0
+  78 0012 FFF7FEFF 		bl	Control_Reg_1_Write
+  79              	.LVL6:
+  22:.\control.c   ****     PWM_1_WriteCompare(pwm); 
+  80              		.loc 1 22 0
+  81 0016 201C     		mov	r0, r4
+  82 0018 FFF7FEFF 		bl	PWM_1_WriteCompare
+  83              	.LVL7:
+  23:.\control.c   **** }
+  84              		.loc 1 23 0
+  85              		@ sp needed
+  86 001c 10BD     		pop	{r4, pc}
+  87              		.cfi_endproc
+  88              	.LFE3:
+  89              		.size	control_drive_1B, .-control_drive_1B
+  90 001e C046     		.section	.text.control_stop_1,"ax",%progbits
+  91              		.align	2
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 3
+
+
+  92              		.global	control_stop_1
+  93              		.code	16
+  94              		.thumb_func
+  95              		.type	control_stop_1, %function
+  96              	control_stop_1:
+  97              	.LFB4:
+  24:.\control.c   **** 
+  25:.\control.c   **** void control_stop_1() {
+  98              		.loc 1 25 0
+  99              		.cfi_startproc
+ 100 0000 08B5     		push	{r3, lr}
+ 101              		.cfi_def_cfa_offset 8
+ 102              		.cfi_offset 3, -8
+ 103              		.cfi_offset 14, -4
+  26:.\control.c   ****     Control_Reg_1_Write((Control_Reg_1_Read()&CONTROL_MASK_1)|CONTROL_STOP_1);
+ 104              		.loc 1 26 0
+ 105 0002 FFF7FEFF 		bl	Control_Reg_1_Read
+ 106              	.LVL8:
+ 107 0006 F023     		mov	r3, #240
+ 108 0008 1840     		and	r0, r3
+ 109 000a FFF7FEFF 		bl	Control_Reg_1_Write
+ 110              	.LVL9:
+  27:.\control.c   ****     PWM_1_WriteCompare(MIN_PWM);
+ 111              		.loc 1 27 0
+ 112 000e 0020     		mov	r0, #0
+ 113 0010 FFF7FEFF 		bl	PWM_1_WriteCompare
+ 114              	.LVL10:
+  28:.\control.c   **** }
+ 115              		.loc 1 28 0
+ 116              		@ sp needed
+ 117 0014 08BD     		pop	{r3, pc}
+ 118              		.cfi_endproc
+ 119              	.LFE4:
+ 120              		.size	control_stop_1, .-control_stop_1
+ 121 0016 C046     		.section	.text.control_drive_2A,"ax",%progbits
+ 122              		.align	2
+ 123              		.global	control_drive_2A
+ 124              		.code	16
+ 125              		.thumb_func
+ 126              		.type	control_drive_2A, %function
+ 127              	control_drive_2A:
+ 128              	.LFB5:
+  29:.\control.c   **** 
+  30:.\control.c   **** void control_drive_2A(const uint8 pwm) {
+ 129              		.loc 1 30 0
+ 130              		.cfi_startproc
+ 131              	.LVL11:
+ 132 0000 10B5     		push	{r4, lr}
+ 133              		.cfi_def_cfa_offset 8
+ 134              		.cfi_offset 4, -8
+ 135              		.cfi_offset 14, -4
+ 136 0002 041C     		mov	r4, r0
+  31:.\control.c   ****     Control_Reg_1_Write((Control_Reg_1_Read()&CONTROL_MASK_2)|CONTROL_DRIVE_2A);
+ 137              		.loc 1 31 0
+ 138 0004 FFF7FEFF 		bl	Control_Reg_1_Read
+ 139              	.LVL12:
+ 140 0008 0F23     		mov	r3, #15
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 4
+
+
+ 141 000a 1840     		and	r0, r3
+ 142 000c 8133     		add	r3, r3, #129
+ 143 000e 1843     		orr	r0, r3
+ 144 0010 FFF7FEFF 		bl	Control_Reg_1_Write
+ 145              	.LVL13:
+  32:.\control.c   ****     PWM_2_WriteCompare(pwm);
+ 146              		.loc 1 32 0
+ 147 0014 201C     		mov	r0, r4
+ 148 0016 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 149              	.LVL14:
+  33:.\control.c   **** }
+ 150              		.loc 1 33 0
+ 151              		@ sp needed
+ 152 001a 10BD     		pop	{r4, pc}
+ 153              		.cfi_endproc
+ 154              	.LFE5:
+ 155              		.size	control_drive_2A, .-control_drive_2A
+ 156              		.section	.text.control_drive_2B,"ax",%progbits
+ 157              		.align	2
+ 158              		.global	control_drive_2B
+ 159              		.code	16
+ 160              		.thumb_func
+ 161              		.type	control_drive_2B, %function
+ 162              	control_drive_2B:
+ 163              	.LFB6:
+  34:.\control.c   **** 
+  35:.\control.c   **** void control_drive_2B(const uint8 pwm) {
+ 164              		.loc 1 35 0
+ 165              		.cfi_startproc
+ 166              	.LVL15:
+ 167 0000 10B5     		push	{r4, lr}
+ 168              		.cfi_def_cfa_offset 8
+ 169              		.cfi_offset 4, -8
+ 170              		.cfi_offset 14, -4
+ 171 0002 041C     		mov	r4, r0
+  36:.\control.c   ****     Control_Reg_1_Write((Control_Reg_1_Read()&CONTROL_MASK_2)|CONTROL_DRIVE_2B);
+ 172              		.loc 1 36 0
+ 173 0004 FFF7FEFF 		bl	Control_Reg_1_Read
+ 174              	.LVL16:
+ 175 0008 0F23     		mov	r3, #15
+ 176 000a 1840     		and	r0, r3
+ 177 000c 5133     		add	r3, r3, #81
+ 178 000e 1843     		orr	r0, r3
+ 179 0010 FFF7FEFF 		bl	Control_Reg_1_Write
+ 180              	.LVL17:
+  37:.\control.c   ****     PWM_2_WriteCompare(pwm);
+ 181              		.loc 1 37 0
+ 182 0014 201C     		mov	r0, r4
+ 183 0016 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 184              	.LVL18:
+  38:.\control.c   **** }
+ 185              		.loc 1 38 0
+ 186              		@ sp needed
+ 187 001a 10BD     		pop	{r4, pc}
+ 188              		.cfi_endproc
+ 189              	.LFE6:
+ 190              		.size	control_drive_2B, .-control_drive_2B
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 5
+
+
+ 191              		.section	.text.control_stop_2,"ax",%progbits
+ 192              		.align	2
+ 193              		.global	control_stop_2
+ 194              		.code	16
+ 195              		.thumb_func
+ 196              		.type	control_stop_2, %function
+ 197              	control_stop_2:
+ 198              	.LFB7:
+  39:.\control.c   ****     
+  40:.\control.c   **** void control_stop_2() {
+ 199              		.loc 1 40 0
+ 200              		.cfi_startproc
+ 201 0000 08B5     		push	{r3, lr}
+ 202              		.cfi_def_cfa_offset 8
+ 203              		.cfi_offset 3, -8
+ 204              		.cfi_offset 14, -4
+  41:.\control.c   ****     Control_Reg_1_Write((Control_Reg_1_Read()&CONTROL_MASK_2)|CONTROL_STOP_2);
+ 205              		.loc 1 41 0
+ 206 0002 FFF7FEFF 		bl	Control_Reg_1_Read
+ 207              	.LVL19:
+ 208 0006 0F23     		mov	r3, #15
+ 209 0008 1840     		and	r0, r3
+ 210 000a FFF7FEFF 		bl	Control_Reg_1_Write
+ 211              	.LVL20:
+  42:.\control.c   ****     PWM_2_WriteCompare(MIN_PWM);
+ 212              		.loc 1 42 0
+ 213 000e 0020     		mov	r0, #0
+ 214 0010 FFF7FEFF 		bl	PWM_2_WriteCompare
+ 215              	.LVL21:
+  43:.\control.c   **** }
+ 216              		.loc 1 43 0
+ 217              		@ sp needed
+ 218 0014 08BD     		pop	{r3, pc}
+ 219              		.cfi_endproc
+ 220              	.LFE7:
+ 221              		.size	control_stop_2, .-control_stop_2
+ 222 0016 C046     		.section	.text.control_init,"ax",%progbits
+ 223              		.align	2
+ 224              		.global	control_init
+ 225              		.code	16
+ 226              		.thumb_func
+ 227              		.type	control_init, %function
+ 228              	control_init:
+ 229              	.LFB8:
+  44:.\control.c   **** 
+  45:.\control.c   **** void control_init() {
+ 230              		.loc 1 45 0
+ 231              		.cfi_startproc
+ 232 0000 08B5     		push	{r3, lr}
+ 233              		.cfi_def_cfa_offset 8
+ 234              		.cfi_offset 3, -8
+ 235              		.cfi_offset 14, -4
+  46:.\control.c   ****     PWM_1_Start();
+ 236              		.loc 1 46 0
+ 237 0002 FFF7FEFF 		bl	PWM_1_Start
+ 238              	.LVL22:
+  47:.\control.c   ****     PWM_2_Start(); 
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 6
+
+
+ 239              		.loc 1 47 0
+ 240 0006 FFF7FEFF 		bl	PWM_2_Start
+ 241              	.LVL23:
+  48:.\control.c   **** }
+ 242              		.loc 1 48 0
+ 243              		@ sp needed
+ 244 000a 08BD     		pop	{r3, pc}
+ 245              		.cfi_endproc
+ 246              	.LFE8:
+ 247              		.size	control_init, .-control_init
+ 248              		.section	.text.control_stop,"ax",%progbits
+ 249              		.align	2
+ 250              		.global	control_stop
+ 251              		.code	16
+ 252              		.thumb_func
+ 253              		.type	control_stop, %function
+ 254              	control_stop:
+ 255              	.LFB9:
+  49:.\control.c   **** 
+  50:.\control.c   **** void control_stop() {control_stop_1(); control_stop_2();}
+ 256              		.loc 1 50 0
+ 257              		.cfi_startproc
+ 258 0000 08B5     		push	{r3, lr}
+ 259              		.cfi_def_cfa_offset 8
+ 260              		.cfi_offset 3, -8
+ 261              		.cfi_offset 14, -4
+ 262              		.loc 1 50 0
+ 263 0002 FFF7FEFF 		bl	control_stop_1
+ 264              	.LVL24:
+ 265 0006 FFF7FEFF 		bl	control_stop_2
+ 266              	.LVL25:
+ 267              		@ sp needed
+ 268 000a 08BD     		pop	{r3, pc}
+ 269              		.cfi_endproc
+ 270              	.LFE9:
+ 271              		.size	control_stop, .-control_stop
+ 272              		.section	.text.control_update,"ax",%progbits
+ 273              		.align	2
+ 274              		.global	control_update
+ 275              		.code	16
+ 276              		.thumb_func
+ 277              		.type	control_update, %function
+ 278              	control_update:
+ 279              	.LFB10:
+  51:.\control.c   **** void control_update(uint8* navigation) {
+ 280              		.loc 1 51 0
+ 281              		.cfi_startproc
+ 282              	.LVL26:
+ 283 0000 10B5     		push	{r4, lr}
+ 284              		.cfi_def_cfa_offset 8
+ 285              		.cfi_offset 4, -8
+ 286              		.cfi_offset 14, -4
+ 287 0002 041C     		mov	r4, r0
+  52:.\control.c   ****     if (navigation[0] == 0) {
+ 288              		.loc 1 52 0
+ 289 0004 0378     		ldrb	r3, [r0]
+ 290 0006 002B     		cmp	r3, #0
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 7
+
+
+ 291 0008 02D1     		bne	.L10
+  53:.\control.c   ****         control_stop();
+ 292              		.loc 1 53 0
+ 293 000a FFF7FEFF 		bl	control_stop
+ 294              	.LVL27:
+ 295 000e 13E0     		b	.L9
+ 296              	.LVL28:
+ 297              	.L10:
+  54:.\control.c   ****     } else {
+  55:.\control.c   ****         if (navigation[1]) {
+ 298              		.loc 1 55 0
+ 299 0010 4378     		ldrb	r3, [r0, #1]
+ 300 0012 002B     		cmp	r3, #0
+ 301 0014 03D0     		beq	.L12
+  56:.\control.c   ****             control_drive_1A(navigation[2]);
+ 302              		.loc 1 56 0
+ 303 0016 8078     		ldrb	r0, [r0, #2]
+ 304              	.LVL29:
+ 305 0018 FFF7FEFF 		bl	control_drive_1A
+ 306              	.LVL30:
+ 307 001c 02E0     		b	.L13
+ 308              	.LVL31:
+ 309              	.L12:
+  57:.\control.c   ****         } else {
+  58:.\control.c   ****             control_drive_1B(navigation[2]);
+ 310              		.loc 1 58 0
+ 311 001e 8078     		ldrb	r0, [r0, #2]
+ 312              	.LVL32:
+ 313 0020 FFF7FEFF 		bl	control_drive_1B
+ 314              	.LVL33:
+ 315              	.L13:
+  59:.\control.c   ****         }
+  60:.\control.c   ****         if (navigation[3]) {
+ 316              		.loc 1 60 0
+ 317 0024 E378     		ldrb	r3, [r4, #3]
+ 318 0026 002B     		cmp	r3, #0
+ 319 0028 03D0     		beq	.L14
+  61:.\control.c   ****             control_drive_2A(navigation[4]);
+ 320              		.loc 1 61 0
+ 321 002a 2079     		ldrb	r0, [r4, #4]
+ 322 002c FFF7FEFF 		bl	control_drive_2A
+ 323              	.LVL34:
+ 324 0030 02E0     		b	.L9
+ 325              	.L14:
+  62:.\control.c   ****         } else {
+  63:.\control.c   ****             control_drive_2B(navigation[4]);
+ 326              		.loc 1 63 0
+ 327 0032 2079     		ldrb	r0, [r4, #4]
+ 328 0034 FFF7FEFF 		bl	control_drive_2B
+ 329              	.LVL35:
+ 330              	.L9:
+  64:.\control.c   ****         }
+  65:.\control.c   ****     }
+  66:.\control.c   **** }
+ 331              		.loc 1 66 0
+ 332              		@ sp needed
+ 333              	.LVL36:
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 8
+
+
+ 334 0038 10BD     		pop	{r4, pc}
+ 335              		.cfi_endproc
+ 336              	.LFE10:
+ 337              		.size	control_update, .-control_update
+ 338 003a C046     		.text
+ 339              	.Letext0:
+ 340              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 341              		.file 3 "Generated_Source\\PSoC4/Control_Reg_1.h"
+ 342              		.file 4 "Generated_Source\\PSoC4/PWM_1.h"
+ 343              		.file 5 "Generated_Source\\PSoC4/PWM_2.h"
+ 344              		.section	.debug_info,"",%progbits
+ 345              	.Ldebug_info0:
+ 346 0000 21030000 		.4byte	0x321
+ 347 0004 0400     		.2byte	0x4
+ 348 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 349 000a 04       		.byte	0x4
+ 350 000b 01       		.uleb128 0x1
+ 351 000c 8C010000 		.4byte	.LASF30
+ 352 0010 01       		.byte	0x1
+ 353 0011 47020000 		.4byte	.LASF31
+ 354 0015 C0000000 		.4byte	.LASF32
+ 355 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 356 001d 00000000 		.4byte	0
+ 357 0021 00000000 		.4byte	.Ldebug_line0
+ 358 0025 02       		.uleb128 0x2
+ 359 0026 01       		.byte	0x1
+ 360 0027 06       		.byte	0x6
+ 361 0028 69020000 		.4byte	.LASF0
+ 362 002c 02       		.uleb128 0x2
+ 363 002d 01       		.byte	0x1
+ 364 002e 08       		.byte	0x8
+ 365 002f 6A000000 		.4byte	.LASF1
+ 366 0033 02       		.uleb128 0x2
+ 367 0034 02       		.byte	0x2
+ 368 0035 05       		.byte	0x5
+ 369 0036 B6000000 		.4byte	.LASF2
+ 370 003a 02       		.uleb128 0x2
+ 371 003b 02       		.byte	0x2
+ 372 003c 07       		.byte	0x7
+ 373 003d 15000000 		.4byte	.LASF3
+ 374 0041 02       		.uleb128 0x2
+ 375 0042 04       		.byte	0x4
+ 376 0043 05       		.byte	0x5
+ 377 0044 60020000 		.4byte	.LASF4
+ 378 0048 02       		.uleb128 0x2
+ 379 0049 04       		.byte	0x4
+ 380 004a 07       		.byte	0x7
+ 381 004b 8B000000 		.4byte	.LASF5
+ 382 004f 02       		.uleb128 0x2
+ 383 0050 08       		.byte	0x8
+ 384 0051 05       		.byte	0x5
+ 385 0052 79010000 		.4byte	.LASF6
+ 386 0056 02       		.uleb128 0x2
+ 387 0057 08       		.byte	0x8
+ 388 0058 07       		.byte	0x7
+ 389 0059 26010000 		.4byte	.LASF7
+ 390 005d 03       		.uleb128 0x3
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 9
+
+
+ 391 005e 04       		.byte	0x4
+ 392 005f 05       		.byte	0x5
+ 393 0060 696E7400 		.ascii	"int\000"
+ 394 0064 02       		.uleb128 0x2
+ 395 0065 04       		.byte	0x4
+ 396 0066 07       		.byte	0x7
+ 397 0067 19010000 		.4byte	.LASF8
+ 398 006b 04       		.uleb128 0x4
+ 399 006c 9D000000 		.4byte	.LASF9
+ 400 0070 02       		.byte	0x2
+ 401 0071 C2       		.byte	0xc2
+ 402 0072 2C000000 		.4byte	0x2c
+ 403 0076 04       		.uleb128 0x4
+ 404 0077 03010000 		.4byte	.LASF10
+ 405 007b 02       		.byte	0x2
+ 406 007c C4       		.byte	0xc4
+ 407 007d 48000000 		.4byte	0x48
+ 408 0081 02       		.uleb128 0x2
+ 409 0082 04       		.byte	0x4
+ 410 0083 04       		.byte	0x4
+ 411 0084 0F000000 		.4byte	.LASF11
+ 412 0088 02       		.uleb128 0x2
+ 413 0089 08       		.byte	0x8
+ 414 008a 04       		.byte	0x4
+ 415 008b A3000000 		.4byte	.LASF12
+ 416 008f 02       		.uleb128 0x2
+ 417 0090 01       		.byte	0x1
+ 418 0091 08       		.byte	0x8
+ 419 0092 87010000 		.4byte	.LASF13
+ 420 0096 02       		.uleb128 0x2
+ 421 0097 04       		.byte	0x4
+ 422 0098 07       		.byte	0x7
+ 423 0099 5D010000 		.4byte	.LASF14
+ 424 009d 05       		.uleb128 0x5
+ 425 009e 48000000 		.4byte	.LASF15
+ 426 00a2 01       		.byte	0x1
+ 427 00a3 0F       		.byte	0xf
+ 428 00a4 00000000 		.4byte	.LFB2
+ 429 00a8 1E000000 		.4byte	.LFE2-.LFB2
+ 430 00ac 01       		.uleb128 0x1
+ 431 00ad 9C       		.byte	0x9c
+ 432 00ae E4000000 		.4byte	0xe4
+ 433 00b2 06       		.uleb128 0x6
+ 434 00b3 70776D00 		.ascii	"pwm\000"
+ 435 00b7 01       		.byte	0x1
+ 436 00b8 0F       		.byte	0xf
+ 437 00b9 E4000000 		.4byte	0xe4
+ 438 00bd 00000000 		.4byte	.LLST0
+ 439 00c1 07       		.uleb128 0x7
+ 440 00c2 08000000 		.4byte	.LVL1
+ 441 00c6 D4020000 		.4byte	0x2d4
+ 442 00ca 07       		.uleb128 0x7
+ 443 00cb 16000000 		.4byte	.LVL2
+ 444 00cf DF020000 		.4byte	0x2df
+ 445 00d3 08       		.uleb128 0x8
+ 446 00d4 1C000000 		.4byte	.LVL3
+ 447 00d8 F0020000 		.4byte	0x2f0
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 10
+
+
+ 448 00dc 09       		.uleb128 0x9
+ 449 00dd 01       		.uleb128 0x1
+ 450 00de 50       		.byte	0x50
+ 451 00df 02       		.uleb128 0x2
+ 452 00e0 74       		.byte	0x74
+ 453 00e1 00       		.sleb128 0
+ 454 00e2 00       		.byte	0
+ 455 00e3 00       		.byte	0
+ 456 00e4 0A       		.uleb128 0xa
+ 457 00e5 6B000000 		.4byte	0x6b
+ 458 00e9 05       		.uleb128 0x5
+ 459 00ea 59000000 		.4byte	.LASF16
+ 460 00ee 01       		.byte	0x1
+ 461 00ef 14       		.byte	0x14
+ 462 00f0 00000000 		.4byte	.LFB3
+ 463 00f4 1E000000 		.4byte	.LFE3-.LFB3
+ 464 00f8 01       		.uleb128 0x1
+ 465 00f9 9C       		.byte	0x9c
+ 466 00fa 30010000 		.4byte	0x130
+ 467 00fe 06       		.uleb128 0x6
+ 468 00ff 70776D00 		.ascii	"pwm\000"
+ 469 0103 01       		.byte	0x1
+ 470 0104 14       		.byte	0x14
+ 471 0105 E4000000 		.4byte	0xe4
+ 472 0109 21000000 		.4byte	.LLST1
+ 473 010d 07       		.uleb128 0x7
+ 474 010e 08000000 		.4byte	.LVL5
+ 475 0112 D4020000 		.4byte	0x2d4
+ 476 0116 07       		.uleb128 0x7
+ 477 0117 16000000 		.4byte	.LVL6
+ 478 011b DF020000 		.4byte	0x2df
+ 479 011f 08       		.uleb128 0x8
+ 480 0120 1C000000 		.4byte	.LVL7
+ 481 0124 F0020000 		.4byte	0x2f0
+ 482 0128 09       		.uleb128 0x9
+ 483 0129 01       		.uleb128 0x1
+ 484 012a 50       		.byte	0x50
+ 485 012b 02       		.uleb128 0x2
+ 486 012c 74       		.byte	0x74
+ 487 012d 00       		.sleb128 0
+ 488 012e 00       		.byte	0
+ 489 012f 00       		.byte	0
+ 490 0130 0B       		.uleb128 0xb
+ 491 0131 75020000 		.4byte	.LASF19
+ 492 0135 01       		.byte	0x1
+ 493 0136 19       		.byte	0x19
+ 494 0137 00000000 		.4byte	.LFB4
+ 495 013b 16000000 		.4byte	.LFE4-.LFB4
+ 496 013f 01       		.uleb128 0x1
+ 497 0140 9C       		.byte	0x9c
+ 498 0141 67010000 		.4byte	0x167
+ 499 0145 07       		.uleb128 0x7
+ 500 0146 06000000 		.4byte	.LVL8
+ 501 014a D4020000 		.4byte	0x2d4
+ 502 014e 07       		.uleb128 0x7
+ 503 014f 0E000000 		.4byte	.LVL9
+ 504 0153 DF020000 		.4byte	0x2df
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 11
+
+
+ 505 0157 08       		.uleb128 0x8
+ 506 0158 14000000 		.4byte	.LVL10
+ 507 015c F0020000 		.4byte	0x2f0
+ 508 0160 09       		.uleb128 0x9
+ 509 0161 01       		.uleb128 0x1
+ 510 0162 50       		.byte	0x50
+ 511 0163 01       		.uleb128 0x1
+ 512 0164 30       		.byte	0x30
+ 513 0165 00       		.byte	0
+ 514 0166 00       		.byte	0
+ 515 0167 05       		.uleb128 0x5
+ 516 0168 25020000 		.4byte	.LASF17
+ 517 016c 01       		.byte	0x1
+ 518 016d 1E       		.byte	0x1e
+ 519 016e 00000000 		.4byte	.LFB5
+ 520 0172 1C000000 		.4byte	.LFE5-.LFB5
+ 521 0176 01       		.uleb128 0x1
+ 522 0177 9C       		.byte	0x9c
+ 523 0178 AE010000 		.4byte	0x1ae
+ 524 017c 06       		.uleb128 0x6
+ 525 017d 70776D00 		.ascii	"pwm\000"
+ 526 0181 01       		.byte	0x1
+ 527 0182 1E       		.byte	0x1e
+ 528 0183 E4000000 		.4byte	0xe4
+ 529 0187 42000000 		.4byte	.LLST2
+ 530 018b 07       		.uleb128 0x7
+ 531 018c 08000000 		.4byte	.LVL12
+ 532 0190 D4020000 		.4byte	0x2d4
+ 533 0194 07       		.uleb128 0x7
+ 534 0195 14000000 		.4byte	.LVL13
+ 535 0199 DF020000 		.4byte	0x2df
+ 536 019d 08       		.uleb128 0x8
+ 537 019e 1A000000 		.4byte	.LVL14
+ 538 01a2 02030000 		.4byte	0x302
+ 539 01a6 09       		.uleb128 0x9
+ 540 01a7 01       		.uleb128 0x1
+ 541 01a8 50       		.byte	0x50
+ 542 01a9 02       		.uleb128 0x2
+ 543 01aa 74       		.byte	0x74
+ 544 01ab 00       		.sleb128 0
+ 545 01ac 00       		.byte	0
+ 546 01ad 00       		.byte	0
+ 547 01ae 05       		.uleb128 0x5
+ 548 01af 36020000 		.4byte	.LASF18
+ 549 01b3 01       		.byte	0x1
+ 550 01b4 23       		.byte	0x23
+ 551 01b5 00000000 		.4byte	.LFB6
+ 552 01b9 1C000000 		.4byte	.LFE6-.LFB6
+ 553 01bd 01       		.uleb128 0x1
+ 554 01be 9C       		.byte	0x9c
+ 555 01bf F5010000 		.4byte	0x1f5
+ 556 01c3 06       		.uleb128 0x6
+ 557 01c4 70776D00 		.ascii	"pwm\000"
+ 558 01c8 01       		.byte	0x1
+ 559 01c9 23       		.byte	0x23
+ 560 01ca E4000000 		.4byte	0xe4
+ 561 01ce 63000000 		.4byte	.LLST3
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 12
+
+
+ 562 01d2 07       		.uleb128 0x7
+ 563 01d3 08000000 		.4byte	.LVL16
+ 564 01d7 D4020000 		.4byte	0x2d4
+ 565 01db 07       		.uleb128 0x7
+ 566 01dc 14000000 		.4byte	.LVL17
+ 567 01e0 DF020000 		.4byte	0x2df
+ 568 01e4 08       		.uleb128 0x8
+ 569 01e5 1A000000 		.4byte	.LVL18
+ 570 01e9 02030000 		.4byte	0x302
+ 571 01ed 09       		.uleb128 0x9
+ 572 01ee 01       		.uleb128 0x1
+ 573 01ef 50       		.byte	0x50
+ 574 01f0 02       		.uleb128 0x2
+ 575 01f1 74       		.byte	0x74
+ 576 01f2 00       		.sleb128 0
+ 577 01f3 00       		.byte	0
+ 578 01f4 00       		.byte	0
+ 579 01f5 0B       		.uleb128 0xb
+ 580 01f6 00000000 		.4byte	.LASF20
+ 581 01fa 01       		.byte	0x1
+ 582 01fb 28       		.byte	0x28
+ 583 01fc 00000000 		.4byte	.LFB7
+ 584 0200 16000000 		.4byte	.LFE7-.LFB7
+ 585 0204 01       		.uleb128 0x1
+ 586 0205 9C       		.byte	0x9c
+ 587 0206 2C020000 		.4byte	0x22c
+ 588 020a 07       		.uleb128 0x7
+ 589 020b 06000000 		.4byte	.LVL19
+ 590 020f D4020000 		.4byte	0x2d4
+ 591 0213 07       		.uleb128 0x7
+ 592 0214 0E000000 		.4byte	.LVL20
+ 593 0218 DF020000 		.4byte	0x2df
+ 594 021c 08       		.uleb128 0x8
+ 595 021d 14000000 		.4byte	.LVL21
+ 596 0221 02030000 		.4byte	0x302
+ 597 0225 09       		.uleb128 0x9
+ 598 0226 01       		.uleb128 0x1
+ 599 0227 50       		.byte	0x50
+ 600 0228 01       		.uleb128 0x1
+ 601 0229 30       		.byte	0x30
+ 602 022a 00       		.byte	0
+ 603 022b 00       		.byte	0
+ 604 022c 0B       		.uleb128 0xb
+ 605 022d 53020000 		.4byte	.LASF21
+ 606 0231 01       		.byte	0x1
+ 607 0232 2D       		.byte	0x2d
+ 608 0233 00000000 		.4byte	.LFB8
+ 609 0237 0C000000 		.4byte	.LFE8-.LFB8
+ 610 023b 01       		.uleb128 0x1
+ 611 023c 9C       		.byte	0x9c
+ 612 023d 54020000 		.4byte	0x254
+ 613 0241 07       		.uleb128 0x7
+ 614 0242 06000000 		.4byte	.LVL22
+ 615 0246 14030000 		.4byte	0x314
+ 616 024a 07       		.uleb128 0x7
+ 617 024b 0A000000 		.4byte	.LVL23
+ 618 024f 1C030000 		.4byte	0x31c
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 13
+
+
+ 619 0253 00       		.byte	0
+ 620 0254 0B       		.uleb128 0xb
+ 621 0255 28000000 		.4byte	.LASF22
+ 622 0259 01       		.byte	0x1
+ 623 025a 32       		.byte	0x32
+ 624 025b 00000000 		.4byte	.LFB9
+ 625 025f 0C000000 		.4byte	.LFE9-.LFB9
+ 626 0263 01       		.uleb128 0x1
+ 627 0264 9C       		.byte	0x9c
+ 628 0265 7C020000 		.4byte	0x27c
+ 629 0269 07       		.uleb128 0x7
+ 630 026a 06000000 		.4byte	.LVL24
+ 631 026e 30010000 		.4byte	0x130
+ 632 0272 07       		.uleb128 0x7
+ 633 0273 0A000000 		.4byte	.LVL25
+ 634 0277 F5010000 		.4byte	0x1f5
+ 635 027b 00       		.byte	0
+ 636 027c 05       		.uleb128 0x5
+ 637 027d 0A010000 		.4byte	.LASF23
+ 638 0281 01       		.byte	0x1
+ 639 0282 33       		.byte	0x33
+ 640 0283 00000000 		.4byte	.LFB10
+ 641 0287 3A000000 		.4byte	.LFE10-.LFB10
+ 642 028b 01       		.uleb128 0x1
+ 643 028c 9C       		.byte	0x9c
+ 644 028d CE020000 		.4byte	0x2ce
+ 645 0291 0C       		.uleb128 0xc
+ 646 0292 1A020000 		.4byte	.LASF24
+ 647 0296 01       		.byte	0x1
+ 648 0297 33       		.byte	0x33
+ 649 0298 CE020000 		.4byte	0x2ce
+ 650 029c 84000000 		.4byte	.LLST4
+ 651 02a0 07       		.uleb128 0x7
+ 652 02a1 0E000000 		.4byte	.LVL27
+ 653 02a5 54020000 		.4byte	0x254
+ 654 02a9 07       		.uleb128 0x7
+ 655 02aa 1C000000 		.4byte	.LVL30
+ 656 02ae 9D000000 		.4byte	0x9d
+ 657 02b2 07       		.uleb128 0x7
+ 658 02b3 24000000 		.4byte	.LVL33
+ 659 02b7 E9000000 		.4byte	0xe9
+ 660 02bb 07       		.uleb128 0x7
+ 661 02bc 30000000 		.4byte	.LVL34
+ 662 02c0 67010000 		.4byte	0x167
+ 663 02c4 07       		.uleb128 0x7
+ 664 02c5 38000000 		.4byte	.LVL35
+ 665 02c9 AE010000 		.4byte	0x1ae
+ 666 02cd 00       		.byte	0
+ 667 02ce 0D       		.uleb128 0xd
+ 668 02cf 04       		.byte	0x4
+ 669 02d0 6B000000 		.4byte	0x6b
+ 670 02d4 0E       		.uleb128 0xe
+ 671 02d5 78000000 		.4byte	.LASF33
+ 672 02d9 03       		.byte	0x3
+ 673 02da 28       		.byte	0x28
+ 674 02db 6B000000 		.4byte	0x6b
+ 675 02df 0F       		.uleb128 0xf
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 14
+
+
+ 676 02e0 3D010000 		.4byte	.LASF25
+ 677 02e4 03       		.byte	0x3
+ 678 02e5 27       		.byte	0x27
+ 679 02e6 F0020000 		.4byte	0x2f0
+ 680 02ea 10       		.uleb128 0x10
+ 681 02eb 6B000000 		.4byte	0x6b
+ 682 02ef 00       		.byte	0
+ 683 02f0 11       		.uleb128 0x11
+ 684 02f1 66010000 		.4byte	.LASF26
+ 685 02f5 04       		.byte	0x4
+ 686 02f6 5401     		.2byte	0x154
+ 687 02f8 02030000 		.4byte	0x302
+ 688 02fc 10       		.uleb128 0x10
+ 689 02fd 76000000 		.4byte	0x76
+ 690 0301 00       		.byte	0
+ 691 0302 11       		.uleb128 0x11
+ 692 0303 35000000 		.4byte	.LASF27
+ 693 0307 05       		.byte	0x5
+ 694 0308 5401     		.2byte	0x154
+ 695 030a 14030000 		.4byte	0x314
+ 696 030e 10       		.uleb128 0x10
+ 697 030f 76000000 		.4byte	0x76
+ 698 0313 00       		.byte	0
+ 699 0314 12       		.uleb128 0x12
+ 700 0315 51010000 		.4byte	.LASF28
+ 701 0319 04       		.byte	0x4
+ 702 031a 3101     		.2byte	0x131
+ 703 031c 12       		.uleb128 0x12
+ 704 031d AA000000 		.4byte	.LASF29
+ 705 0321 05       		.byte	0x5
+ 706 0322 3101     		.2byte	0x131
+ 707 0324 00       		.byte	0
+ 708              		.section	.debug_abbrev,"",%progbits
+ 709              	.Ldebug_abbrev0:
+ 710 0000 01       		.uleb128 0x1
+ 711 0001 11       		.uleb128 0x11
+ 712 0002 01       		.byte	0x1
+ 713 0003 25       		.uleb128 0x25
+ 714 0004 0E       		.uleb128 0xe
+ 715 0005 13       		.uleb128 0x13
+ 716 0006 0B       		.uleb128 0xb
+ 717 0007 03       		.uleb128 0x3
+ 718 0008 0E       		.uleb128 0xe
+ 719 0009 1B       		.uleb128 0x1b
+ 720 000a 0E       		.uleb128 0xe
+ 721 000b 55       		.uleb128 0x55
+ 722 000c 17       		.uleb128 0x17
+ 723 000d 11       		.uleb128 0x11
+ 724 000e 01       		.uleb128 0x1
+ 725 000f 10       		.uleb128 0x10
+ 726 0010 17       		.uleb128 0x17
+ 727 0011 00       		.byte	0
+ 728 0012 00       		.byte	0
+ 729 0013 02       		.uleb128 0x2
+ 730 0014 24       		.uleb128 0x24
+ 731 0015 00       		.byte	0
+ 732 0016 0B       		.uleb128 0xb
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 15
+
+
+ 733 0017 0B       		.uleb128 0xb
+ 734 0018 3E       		.uleb128 0x3e
+ 735 0019 0B       		.uleb128 0xb
+ 736 001a 03       		.uleb128 0x3
+ 737 001b 0E       		.uleb128 0xe
+ 738 001c 00       		.byte	0
+ 739 001d 00       		.byte	0
+ 740 001e 03       		.uleb128 0x3
+ 741 001f 24       		.uleb128 0x24
+ 742 0020 00       		.byte	0
+ 743 0021 0B       		.uleb128 0xb
+ 744 0022 0B       		.uleb128 0xb
+ 745 0023 3E       		.uleb128 0x3e
+ 746 0024 0B       		.uleb128 0xb
+ 747 0025 03       		.uleb128 0x3
+ 748 0026 08       		.uleb128 0x8
+ 749 0027 00       		.byte	0
+ 750 0028 00       		.byte	0
+ 751 0029 04       		.uleb128 0x4
+ 752 002a 16       		.uleb128 0x16
+ 753 002b 00       		.byte	0
+ 754 002c 03       		.uleb128 0x3
+ 755 002d 0E       		.uleb128 0xe
+ 756 002e 3A       		.uleb128 0x3a
+ 757 002f 0B       		.uleb128 0xb
+ 758 0030 3B       		.uleb128 0x3b
+ 759 0031 0B       		.uleb128 0xb
+ 760 0032 49       		.uleb128 0x49
+ 761 0033 13       		.uleb128 0x13
+ 762 0034 00       		.byte	0
+ 763 0035 00       		.byte	0
+ 764 0036 05       		.uleb128 0x5
+ 765 0037 2E       		.uleb128 0x2e
+ 766 0038 01       		.byte	0x1
+ 767 0039 3F       		.uleb128 0x3f
+ 768 003a 19       		.uleb128 0x19
+ 769 003b 03       		.uleb128 0x3
+ 770 003c 0E       		.uleb128 0xe
+ 771 003d 3A       		.uleb128 0x3a
+ 772 003e 0B       		.uleb128 0xb
+ 773 003f 3B       		.uleb128 0x3b
+ 774 0040 0B       		.uleb128 0xb
+ 775 0041 27       		.uleb128 0x27
+ 776 0042 19       		.uleb128 0x19
+ 777 0043 11       		.uleb128 0x11
+ 778 0044 01       		.uleb128 0x1
+ 779 0045 12       		.uleb128 0x12
+ 780 0046 06       		.uleb128 0x6
+ 781 0047 40       		.uleb128 0x40
+ 782 0048 18       		.uleb128 0x18
+ 783 0049 9742     		.uleb128 0x2117
+ 784 004b 19       		.uleb128 0x19
+ 785 004c 01       		.uleb128 0x1
+ 786 004d 13       		.uleb128 0x13
+ 787 004e 00       		.byte	0
+ 788 004f 00       		.byte	0
+ 789 0050 06       		.uleb128 0x6
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 16
+
+
+ 790 0051 05       		.uleb128 0x5
+ 791 0052 00       		.byte	0
+ 792 0053 03       		.uleb128 0x3
+ 793 0054 08       		.uleb128 0x8
+ 794 0055 3A       		.uleb128 0x3a
+ 795 0056 0B       		.uleb128 0xb
+ 796 0057 3B       		.uleb128 0x3b
+ 797 0058 0B       		.uleb128 0xb
+ 798 0059 49       		.uleb128 0x49
+ 799 005a 13       		.uleb128 0x13
+ 800 005b 02       		.uleb128 0x2
+ 801 005c 17       		.uleb128 0x17
+ 802 005d 00       		.byte	0
+ 803 005e 00       		.byte	0
+ 804 005f 07       		.uleb128 0x7
+ 805 0060 898201   		.uleb128 0x4109
+ 806 0063 00       		.byte	0
+ 807 0064 11       		.uleb128 0x11
+ 808 0065 01       		.uleb128 0x1
+ 809 0066 31       		.uleb128 0x31
+ 810 0067 13       		.uleb128 0x13
+ 811 0068 00       		.byte	0
+ 812 0069 00       		.byte	0
+ 813 006a 08       		.uleb128 0x8
+ 814 006b 898201   		.uleb128 0x4109
+ 815 006e 01       		.byte	0x1
+ 816 006f 11       		.uleb128 0x11
+ 817 0070 01       		.uleb128 0x1
+ 818 0071 31       		.uleb128 0x31
+ 819 0072 13       		.uleb128 0x13
+ 820 0073 00       		.byte	0
+ 821 0074 00       		.byte	0
+ 822 0075 09       		.uleb128 0x9
+ 823 0076 8A8201   		.uleb128 0x410a
+ 824 0079 00       		.byte	0
+ 825 007a 02       		.uleb128 0x2
+ 826 007b 18       		.uleb128 0x18
+ 827 007c 9142     		.uleb128 0x2111
+ 828 007e 18       		.uleb128 0x18
+ 829 007f 00       		.byte	0
+ 830 0080 00       		.byte	0
+ 831 0081 0A       		.uleb128 0xa
+ 832 0082 26       		.uleb128 0x26
+ 833 0083 00       		.byte	0
+ 834 0084 49       		.uleb128 0x49
+ 835 0085 13       		.uleb128 0x13
+ 836 0086 00       		.byte	0
+ 837 0087 00       		.byte	0
+ 838 0088 0B       		.uleb128 0xb
+ 839 0089 2E       		.uleb128 0x2e
+ 840 008a 01       		.byte	0x1
+ 841 008b 3F       		.uleb128 0x3f
+ 842 008c 19       		.uleb128 0x19
+ 843 008d 03       		.uleb128 0x3
+ 844 008e 0E       		.uleb128 0xe
+ 845 008f 3A       		.uleb128 0x3a
+ 846 0090 0B       		.uleb128 0xb
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 17
+
+
+ 847 0091 3B       		.uleb128 0x3b
+ 848 0092 0B       		.uleb128 0xb
+ 849 0093 11       		.uleb128 0x11
+ 850 0094 01       		.uleb128 0x1
+ 851 0095 12       		.uleb128 0x12
+ 852 0096 06       		.uleb128 0x6
+ 853 0097 40       		.uleb128 0x40
+ 854 0098 18       		.uleb128 0x18
+ 855 0099 9742     		.uleb128 0x2117
+ 856 009b 19       		.uleb128 0x19
+ 857 009c 01       		.uleb128 0x1
+ 858 009d 13       		.uleb128 0x13
+ 859 009e 00       		.byte	0
+ 860 009f 00       		.byte	0
+ 861 00a0 0C       		.uleb128 0xc
+ 862 00a1 05       		.uleb128 0x5
+ 863 00a2 00       		.byte	0
+ 864 00a3 03       		.uleb128 0x3
+ 865 00a4 0E       		.uleb128 0xe
+ 866 00a5 3A       		.uleb128 0x3a
+ 867 00a6 0B       		.uleb128 0xb
+ 868 00a7 3B       		.uleb128 0x3b
+ 869 00a8 0B       		.uleb128 0xb
+ 870 00a9 49       		.uleb128 0x49
+ 871 00aa 13       		.uleb128 0x13
+ 872 00ab 02       		.uleb128 0x2
+ 873 00ac 17       		.uleb128 0x17
+ 874 00ad 00       		.byte	0
+ 875 00ae 00       		.byte	0
+ 876 00af 0D       		.uleb128 0xd
+ 877 00b0 0F       		.uleb128 0xf
+ 878 00b1 00       		.byte	0
+ 879 00b2 0B       		.uleb128 0xb
+ 880 00b3 0B       		.uleb128 0xb
+ 881 00b4 49       		.uleb128 0x49
+ 882 00b5 13       		.uleb128 0x13
+ 883 00b6 00       		.byte	0
+ 884 00b7 00       		.byte	0
+ 885 00b8 0E       		.uleb128 0xe
+ 886 00b9 2E       		.uleb128 0x2e
+ 887 00ba 00       		.byte	0
+ 888 00bb 3F       		.uleb128 0x3f
+ 889 00bc 19       		.uleb128 0x19
+ 890 00bd 03       		.uleb128 0x3
+ 891 00be 0E       		.uleb128 0xe
+ 892 00bf 3A       		.uleb128 0x3a
+ 893 00c0 0B       		.uleb128 0xb
+ 894 00c1 3B       		.uleb128 0x3b
+ 895 00c2 0B       		.uleb128 0xb
+ 896 00c3 27       		.uleb128 0x27
+ 897 00c4 19       		.uleb128 0x19
+ 898 00c5 49       		.uleb128 0x49
+ 899 00c6 13       		.uleb128 0x13
+ 900 00c7 3C       		.uleb128 0x3c
+ 901 00c8 19       		.uleb128 0x19
+ 902 00c9 00       		.byte	0
+ 903 00ca 00       		.byte	0
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 18
+
+
+ 904 00cb 0F       		.uleb128 0xf
+ 905 00cc 2E       		.uleb128 0x2e
+ 906 00cd 01       		.byte	0x1
+ 907 00ce 3F       		.uleb128 0x3f
+ 908 00cf 19       		.uleb128 0x19
+ 909 00d0 03       		.uleb128 0x3
+ 910 00d1 0E       		.uleb128 0xe
+ 911 00d2 3A       		.uleb128 0x3a
+ 912 00d3 0B       		.uleb128 0xb
+ 913 00d4 3B       		.uleb128 0x3b
+ 914 00d5 0B       		.uleb128 0xb
+ 915 00d6 27       		.uleb128 0x27
+ 916 00d7 19       		.uleb128 0x19
+ 917 00d8 3C       		.uleb128 0x3c
+ 918 00d9 19       		.uleb128 0x19
+ 919 00da 01       		.uleb128 0x1
+ 920 00db 13       		.uleb128 0x13
+ 921 00dc 00       		.byte	0
+ 922 00dd 00       		.byte	0
+ 923 00de 10       		.uleb128 0x10
+ 924 00df 05       		.uleb128 0x5
+ 925 00e0 00       		.byte	0
+ 926 00e1 49       		.uleb128 0x49
+ 927 00e2 13       		.uleb128 0x13
+ 928 00e3 00       		.byte	0
+ 929 00e4 00       		.byte	0
+ 930 00e5 11       		.uleb128 0x11
+ 931 00e6 2E       		.uleb128 0x2e
+ 932 00e7 01       		.byte	0x1
+ 933 00e8 3F       		.uleb128 0x3f
+ 934 00e9 19       		.uleb128 0x19
+ 935 00ea 03       		.uleb128 0x3
+ 936 00eb 0E       		.uleb128 0xe
+ 937 00ec 3A       		.uleb128 0x3a
+ 938 00ed 0B       		.uleb128 0xb
+ 939 00ee 3B       		.uleb128 0x3b
+ 940 00ef 05       		.uleb128 0x5
+ 941 00f0 27       		.uleb128 0x27
+ 942 00f1 19       		.uleb128 0x19
+ 943 00f2 3C       		.uleb128 0x3c
+ 944 00f3 19       		.uleb128 0x19
+ 945 00f4 01       		.uleb128 0x1
+ 946 00f5 13       		.uleb128 0x13
+ 947 00f6 00       		.byte	0
+ 948 00f7 00       		.byte	0
+ 949 00f8 12       		.uleb128 0x12
+ 950 00f9 2E       		.uleb128 0x2e
+ 951 00fa 00       		.byte	0
+ 952 00fb 3F       		.uleb128 0x3f
+ 953 00fc 19       		.uleb128 0x19
+ 954 00fd 03       		.uleb128 0x3
+ 955 00fe 0E       		.uleb128 0xe
+ 956 00ff 3A       		.uleb128 0x3a
+ 957 0100 0B       		.uleb128 0xb
+ 958 0101 3B       		.uleb128 0x3b
+ 959 0102 05       		.uleb128 0x5
+ 960 0103 27       		.uleb128 0x27
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 19
+
+
+ 961 0104 19       		.uleb128 0x19
+ 962 0105 3C       		.uleb128 0x3c
+ 963 0106 19       		.uleb128 0x19
+ 964 0107 00       		.byte	0
+ 965 0108 00       		.byte	0
+ 966 0109 00       		.byte	0
+ 967              		.section	.debug_loc,"",%progbits
+ 968              	.Ldebug_loc0:
+ 969              	.LLST0:
+ 970 0000 00000000 		.4byte	.LVL0
+ 971 0004 07000000 		.4byte	.LVL1-1
+ 972 0008 0100     		.2byte	0x1
+ 973 000a 50       		.byte	0x50
+ 974 000b 07000000 		.4byte	.LVL1-1
+ 975 000f 1E000000 		.4byte	.LFE2
+ 976 0013 0400     		.2byte	0x4
+ 977 0015 F3       		.byte	0xf3
+ 978 0016 01       		.uleb128 0x1
+ 979 0017 50       		.byte	0x50
+ 980 0018 9F       		.byte	0x9f
+ 981 0019 00000000 		.4byte	0
+ 982 001d 00000000 		.4byte	0
+ 983              	.LLST1:
+ 984 0021 00000000 		.4byte	.LVL4
+ 985 0025 07000000 		.4byte	.LVL5-1
+ 986 0029 0100     		.2byte	0x1
+ 987 002b 50       		.byte	0x50
+ 988 002c 07000000 		.4byte	.LVL5-1
+ 989 0030 1E000000 		.4byte	.LFE3
+ 990 0034 0400     		.2byte	0x4
+ 991 0036 F3       		.byte	0xf3
+ 992 0037 01       		.uleb128 0x1
+ 993 0038 50       		.byte	0x50
+ 994 0039 9F       		.byte	0x9f
+ 995 003a 00000000 		.4byte	0
+ 996 003e 00000000 		.4byte	0
+ 997              	.LLST2:
+ 998 0042 00000000 		.4byte	.LVL11
+ 999 0046 07000000 		.4byte	.LVL12-1
+ 1000 004a 0100     		.2byte	0x1
+ 1001 004c 50       		.byte	0x50
+ 1002 004d 07000000 		.4byte	.LVL12-1
+ 1003 0051 1C000000 		.4byte	.LFE5
+ 1004 0055 0400     		.2byte	0x4
+ 1005 0057 F3       		.byte	0xf3
+ 1006 0058 01       		.uleb128 0x1
+ 1007 0059 50       		.byte	0x50
+ 1008 005a 9F       		.byte	0x9f
+ 1009 005b 00000000 		.4byte	0
+ 1010 005f 00000000 		.4byte	0
+ 1011              	.LLST3:
+ 1012 0063 00000000 		.4byte	.LVL15
+ 1013 0067 07000000 		.4byte	.LVL16-1
+ 1014 006b 0100     		.2byte	0x1
+ 1015 006d 50       		.byte	0x50
+ 1016 006e 07000000 		.4byte	.LVL16-1
+ 1017 0072 1C000000 		.4byte	.LFE6
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 20
+
+
+ 1018 0076 0400     		.2byte	0x4
+ 1019 0078 F3       		.byte	0xf3
+ 1020 0079 01       		.uleb128 0x1
+ 1021 007a 50       		.byte	0x50
+ 1022 007b 9F       		.byte	0x9f
+ 1023 007c 00000000 		.4byte	0
+ 1024 0080 00000000 		.4byte	0
+ 1025              	.LLST4:
+ 1026 0084 00000000 		.4byte	.LVL26
+ 1027 0088 0D000000 		.4byte	.LVL27-1
+ 1028 008c 0100     		.2byte	0x1
+ 1029 008e 50       		.byte	0x50
+ 1030 008f 0D000000 		.4byte	.LVL27-1
+ 1031 0093 10000000 		.4byte	.LVL28
+ 1032 0097 0100     		.2byte	0x1
+ 1033 0099 54       		.byte	0x54
+ 1034 009a 10000000 		.4byte	.LVL28
+ 1035 009e 18000000 		.4byte	.LVL29
+ 1036 00a2 0100     		.2byte	0x1
+ 1037 00a4 50       		.byte	0x50
+ 1038 00a5 18000000 		.4byte	.LVL29
+ 1039 00a9 1E000000 		.4byte	.LVL31
+ 1040 00ad 0100     		.2byte	0x1
+ 1041 00af 54       		.byte	0x54
+ 1042 00b0 1E000000 		.4byte	.LVL31
+ 1043 00b4 20000000 		.4byte	.LVL32
+ 1044 00b8 0100     		.2byte	0x1
+ 1045 00ba 50       		.byte	0x50
+ 1046 00bb 20000000 		.4byte	.LVL32
+ 1047 00bf 38000000 		.4byte	.LVL36
+ 1048 00c3 0100     		.2byte	0x1
+ 1049 00c5 54       		.byte	0x54
+ 1050 00c6 38000000 		.4byte	.LVL36
+ 1051 00ca 3A000000 		.4byte	.LFE10
+ 1052 00ce 0400     		.2byte	0x4
+ 1053 00d0 F3       		.byte	0xf3
+ 1054 00d1 01       		.uleb128 0x1
+ 1055 00d2 50       		.byte	0x50
+ 1056 00d3 9F       		.byte	0x9f
+ 1057 00d4 00000000 		.4byte	0
+ 1058 00d8 00000000 		.4byte	0
+ 1059              		.section	.debug_aranges,"",%progbits
+ 1060 0000 5C000000 		.4byte	0x5c
+ 1061 0004 0200     		.2byte	0x2
+ 1062 0006 00000000 		.4byte	.Ldebug_info0
+ 1063 000a 04       		.byte	0x4
+ 1064 000b 00       		.byte	0
+ 1065 000c 0000     		.2byte	0
+ 1066 000e 0000     		.2byte	0
+ 1067 0010 00000000 		.4byte	.LFB2
+ 1068 0014 1E000000 		.4byte	.LFE2-.LFB2
+ 1069 0018 00000000 		.4byte	.LFB3
+ 1070 001c 1E000000 		.4byte	.LFE3-.LFB3
+ 1071 0020 00000000 		.4byte	.LFB4
+ 1072 0024 16000000 		.4byte	.LFE4-.LFB4
+ 1073 0028 00000000 		.4byte	.LFB5
+ 1074 002c 1C000000 		.4byte	.LFE5-.LFB5
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 21
+
+
+ 1075 0030 00000000 		.4byte	.LFB6
+ 1076 0034 1C000000 		.4byte	.LFE6-.LFB6
+ 1077 0038 00000000 		.4byte	.LFB7
+ 1078 003c 16000000 		.4byte	.LFE7-.LFB7
+ 1079 0040 00000000 		.4byte	.LFB8
+ 1080 0044 0C000000 		.4byte	.LFE8-.LFB8
+ 1081 0048 00000000 		.4byte	.LFB9
+ 1082 004c 0C000000 		.4byte	.LFE9-.LFB9
+ 1083 0050 00000000 		.4byte	.LFB10
+ 1084 0054 3A000000 		.4byte	.LFE10-.LFB10
+ 1085 0058 00000000 		.4byte	0
+ 1086 005c 00000000 		.4byte	0
+ 1087              		.section	.debug_ranges,"",%progbits
+ 1088              	.Ldebug_ranges0:
+ 1089 0000 00000000 		.4byte	.LFB2
+ 1090 0004 1E000000 		.4byte	.LFE2
+ 1091 0008 00000000 		.4byte	.LFB3
+ 1092 000c 1E000000 		.4byte	.LFE3
+ 1093 0010 00000000 		.4byte	.LFB4
+ 1094 0014 16000000 		.4byte	.LFE4
+ 1095 0018 00000000 		.4byte	.LFB5
+ 1096 001c 1C000000 		.4byte	.LFE5
+ 1097 0020 00000000 		.4byte	.LFB6
+ 1098 0024 1C000000 		.4byte	.LFE6
+ 1099 0028 00000000 		.4byte	.LFB7
+ 1100 002c 16000000 		.4byte	.LFE7
+ 1101 0030 00000000 		.4byte	.LFB8
+ 1102 0034 0C000000 		.4byte	.LFE8
+ 1103 0038 00000000 		.4byte	.LFB9
+ 1104 003c 0C000000 		.4byte	.LFE9
+ 1105 0040 00000000 		.4byte	.LFB10
+ 1106 0044 3A000000 		.4byte	.LFE10
+ 1107 0048 00000000 		.4byte	0
+ 1108 004c 00000000 		.4byte	0
+ 1109              		.section	.debug_line,"",%progbits
+ 1110              	.Ldebug_line0:
+ 1111 0000 1B010000 		.section	.debug_str,"MS",%progbits,1
+ 1111      02006F00 
+ 1111      00000201 
+ 1111      FB0E0D00 
+ 1111      01010101 
+ 1112              	.LASF20:
+ 1113 0000 636F6E74 		.ascii	"control_stop_2\000"
+ 1113      726F6C5F 
+ 1113      73746F70 
+ 1113      5F3200
+ 1114              	.LASF11:
+ 1115 000f 666C6F61 		.ascii	"float\000"
+ 1115      7400
+ 1116              	.LASF3:
+ 1117 0015 73686F72 		.ascii	"short unsigned int\000"
+ 1117      7420756E 
+ 1117      7369676E 
+ 1117      65642069 
+ 1117      6E7400
+ 1118              	.LASF22:
+ 1119 0028 636F6E74 		.ascii	"control_stop\000"
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 22
+
+
+ 1119      726F6C5F 
+ 1119      73746F70 
+ 1119      00
+ 1120              	.LASF27:
+ 1121 0035 50574D5F 		.ascii	"PWM_2_WriteCompare\000"
+ 1121      325F5772 
+ 1121      69746543 
+ 1121      6F6D7061 
+ 1121      726500
+ 1122              	.LASF15:
+ 1123 0048 636F6E74 		.ascii	"control_drive_1A\000"
+ 1123      726F6C5F 
+ 1123      64726976 
+ 1123      655F3141 
+ 1123      00
+ 1124              	.LASF16:
+ 1125 0059 636F6E74 		.ascii	"control_drive_1B\000"
+ 1125      726F6C5F 
+ 1125      64726976 
+ 1125      655F3142 
+ 1125      00
+ 1126              	.LASF1:
+ 1127 006a 756E7369 		.ascii	"unsigned char\000"
+ 1127      676E6564 
+ 1127      20636861 
+ 1127      7200
+ 1128              	.LASF33:
+ 1129 0078 436F6E74 		.ascii	"Control_Reg_1_Read\000"
+ 1129      726F6C5F 
+ 1129      5265675F 
+ 1129      315F5265 
+ 1129      616400
+ 1130              	.LASF5:
+ 1131 008b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1131      20756E73 
+ 1131      69676E65 
+ 1131      6420696E 
+ 1131      7400
+ 1132              	.LASF9:
+ 1133 009d 75696E74 		.ascii	"uint8\000"
+ 1133      3800
+ 1134              	.LASF12:
+ 1135 00a3 646F7562 		.ascii	"double\000"
+ 1135      6C6500
+ 1136              	.LASF29:
+ 1137 00aa 50574D5F 		.ascii	"PWM_2_Start\000"
+ 1137      325F5374 
+ 1137      61727400 
+ 1138              	.LASF2:
+ 1139 00b6 73686F72 		.ascii	"short int\000"
+ 1139      7420696E 
+ 1139      7400
+ 1140              	.LASF32:
+ 1141 00c0 433A5C55 		.ascii	"C:\\Users\\leander\\Documents\\PSoC Creator\\car_v2"
+ 1141      73657273 
+ 1141      5C6C6561 
+ 1141      6E646572 
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 23
+
+
+ 1141      5C446F63 
+ 1142 00ee 5C6D6F74 		.ascii	"\\motor_control.cydsn\000"
+ 1142      6F725F63 
+ 1142      6F6E7472 
+ 1142      6F6C2E63 
+ 1142      7964736E 
+ 1143              	.LASF10:
+ 1144 0103 75696E74 		.ascii	"uint32\000"
+ 1144      333200
+ 1145              	.LASF23:
+ 1146 010a 636F6E74 		.ascii	"control_update\000"
+ 1146      726F6C5F 
+ 1146      75706461 
+ 1146      746500
+ 1147              	.LASF8:
+ 1148 0119 756E7369 		.ascii	"unsigned int\000"
+ 1148      676E6564 
+ 1148      20696E74 
+ 1148      00
+ 1149              	.LASF7:
+ 1150 0126 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1150      206C6F6E 
+ 1150      6720756E 
+ 1150      7369676E 
+ 1150      65642069 
+ 1151              	.LASF25:
+ 1152 013d 436F6E74 		.ascii	"Control_Reg_1_Write\000"
+ 1152      726F6C5F 
+ 1152      5265675F 
+ 1152      315F5772 
+ 1152      69746500 
+ 1153              	.LASF28:
+ 1154 0151 50574D5F 		.ascii	"PWM_1_Start\000"
+ 1154      315F5374 
+ 1154      61727400 
+ 1155              	.LASF14:
+ 1156 015d 73697A65 		.ascii	"sizetype\000"
+ 1156      74797065 
+ 1156      00
+ 1157              	.LASF26:
+ 1158 0166 50574D5F 		.ascii	"PWM_1_WriteCompare\000"
+ 1158      315F5772 
+ 1158      69746543 
+ 1158      6F6D7061 
+ 1158      726500
+ 1159              	.LASF6:
+ 1160 0179 6C6F6E67 		.ascii	"long long int\000"
+ 1160      206C6F6E 
+ 1160      6720696E 
+ 1160      7400
+ 1161              	.LASF13:
+ 1162 0187 63686172 		.ascii	"char\000"
+ 1162      00
+ 1163              	.LASF30:
+ 1164 018c 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1164      4320342E 
+ 1164      392E3320 
+ARM GAS  C:\Users\leander\AppData\Local\Temp\ccpC7WDb.s 			page 24
+
+
+ 1164      32303135 
+ 1164      30333033 
+ 1165 01bf 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0 -mthumb -g -O"
+ 1165      20726576 
+ 1165      6973696F 
+ 1165      6E203232 
+ 1165      31323230 
+ 1166 01f2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1166      66756E63 
+ 1166      74696F6E 
+ 1166      2D736563 
+ 1166      74696F6E 
+ 1167              	.LASF24:
+ 1168 021a 6E617669 		.ascii	"navigation\000"
+ 1168      67617469 
+ 1168      6F6E00
+ 1169              	.LASF17:
+ 1170 0225 636F6E74 		.ascii	"control_drive_2A\000"
+ 1170      726F6C5F 
+ 1170      64726976 
+ 1170      655F3241 
+ 1170      00
+ 1171              	.LASF18:
+ 1172 0236 636F6E74 		.ascii	"control_drive_2B\000"
+ 1172      726F6C5F 
+ 1172      64726976 
+ 1172      655F3242 
+ 1172      00
+ 1173              	.LASF31:
+ 1174 0247 2E5C636F 		.ascii	".\\control.c\000"
+ 1174      6E74726F 
+ 1174      6C2E6300 
+ 1175              	.LASF21:
+ 1176 0253 636F6E74 		.ascii	"control_init\000"
+ 1176      726F6C5F 
+ 1176      696E6974 
+ 1176      00
+ 1177              	.LASF4:
+ 1178 0260 6C6F6E67 		.ascii	"long int\000"
+ 1178      20696E74 
+ 1178      00
+ 1179              	.LASF0:
+ 1180 0269 7369676E 		.ascii	"signed char\000"
+ 1180      65642063 
+ 1180      68617200 
+ 1181              	.LASF19:
+ 1182 0275 636F6E74 		.ascii	"control_stop_1\000"
+ 1182      726F6C5F 
+ 1182      73746F70 
+ 1182      5F3100
+ 1183              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

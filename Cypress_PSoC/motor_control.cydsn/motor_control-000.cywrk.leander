@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="motor_control-000\motor_control\Source Files\main.c">
+<ExpandedNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\TopDesign</v>
+<v>motor_control-000\motor_control\motor_control.cydwr</v>
+<v>motor_control-000\motor_control\Header Files</v>
+<v>motor_control-000\motor_control\Header Files\control.h</v>
+<v>motor_control-000\motor_control\Source Files</v>
+<v>motor_control-000\motor_control\Source Files\control.c</v>
+<v>motor_control-000\motor_control\Source Files\main.c</v>
+<v>motor_control-000\motor_control\Generated_Source</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_custom.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_custom.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_eventHandler.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_eventHandler.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_gatt.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_gatt.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_HAL_INT.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_HAL_PVT.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_HAL_PVT.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_Stack.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_STACK_PVT.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGap.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGatt.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGattClient.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGattDb.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGattServer.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackHostMain.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackL2cap.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1_bless_isr</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1_bless_isr\BLE_1_bless_isr.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1_bless_isr\BLE_1_bless_isr.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Clock_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Clock_1\Clock_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Clock_1\Clock_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1\Control_Reg_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1\Control_Reg_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1\Control_Reg_1_PM.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cypins.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_lfclk</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_lfclk\CyLFClk.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_lfclk\CyLFClk.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_1\Pin_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_1\Pin_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_1\Pin_1_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_2</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_2\Pin_2.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_2\Pin_2.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_2\Pin_2_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_3</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_3\Pin_3.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_3\Pin_3.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_3\Pin_3_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_4</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_4\Pin_4.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_4\Pin_4.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_4\Pin_4_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_5</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_5\Pin_5.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_5\Pin_5.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_5\Pin_5_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_6</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_6\Pin_6.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_6\Pin_6.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_6\Pin_6_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_7</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_7\Pin_7.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_7\Pin_7.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_7\Pin_7_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_8</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_8\Pin_8.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_8\Pin_8.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Pin_8\Pin_8_aliases.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_1\PWM_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_1\PWM_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_1\PWM_1_PM.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_2</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_2\PWM_2.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_2\PWM_2.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\PWM_2\PWM_2_PM.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1.cycsa</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cycodeshareimport.ld</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cycodeshareimport.scat</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cyfitter.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cyfitter_cfg.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cyfitter_cfg.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cyfittergnu.inc</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cyfitteriar.inc</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cyfitterrv.inc</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cymetadata.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>motor_control-000\motor_control\Generated_Source</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_custom.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_custom.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_eventHandler.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_eventHandler.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_gatt.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_gatt.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_HAL_INT.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_HAL_PVT.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_HAL_PVT.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_Stack.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_STACK_PVT.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGap.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGatt.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGattClient.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGattDb.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackGattServer.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackHostMain.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1\BLE_1_StackL2cap.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1_bless_isr</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1_bless_isr\BLE_1_bless_isr.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\BLE_1_bless_isr\BLE_1_bless_isr.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Clock_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Clock_1\Clock_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Clock_1\Clock_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1\Control_Reg_1.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1\Control_Reg_1.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\Control_Reg_1\Control_Reg_1_PM.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>motor_control-000\motor_control\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\TopDesign</v>
+<v>motor_control-000\motor_control\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\TopDesign</v>
+<v>motor_control-000\motor_control\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\CortexM0</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_bless_isr.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_custom.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_eventHandler.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_gatt.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\control.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Control_Reg_1_PM.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_2.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_3.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_4.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_5.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_6.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_7.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_8.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_2.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_2_PM.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\motor_control.elf</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\motor_control.hex</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\motor_control.map</v>
+<v>motor_control-000\motor_control\motor_control.gpdsc</v>
+<v>motor_control-000\motor_control\motor_control.rpt</v>
+<v>motor_control-000\motor_control\motor_control_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\CortexM0</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_bless_isr.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_custom.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_eventHandler.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_gatt.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_HAL_INT.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\BLE_1_HAL_PVT.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Cm0Start.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\control.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Control_Reg_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Control_Reg_1_PM.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLFClk.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_2.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_3.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_4.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_5.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_6.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_7.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\Pin_8.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_1.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_1_PM.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_2.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\Listing Files\PWM_2_PM.lst</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\motor_control.elf</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\motor_control.hex</v>
+<v>motor_control-000\motor_control\CortexM0\ARM_GCC_493\Debug\motor_control.map</v>
+<v>motor_control-000\motor_control\motor_control.gpdsc</v>
+<v>motor_control-000\motor_control\motor_control.rpt</v>
+<v>motor_control-000\motor_control\motor_control_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\PSoC 4 Architecture TRM</v>
+<v>motor_control-000\motor_control\PSoC 4200 BLE Family Datasheet</v>
+<v>motor_control-000\motor_control\System Reference Guides</v>
+<v>motor_control-000\motor_control\System Reference Guides\cy_boot_v5_20</v>
+<v>motor_control-000\motor_control\System Reference Guides\cy_lfclk_v1_0</v>
+<v>motor_control-000\motor_control\BLE_v2_30.pdf</v>
+<v>motor_control-000\motor_control\cy_clock_v2_20.pdf</v>
+<v>motor_control-000\motor_control\cy_constant_v1_0</v>
+<v>motor_control-000\motor_control\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>motor_control-000\motor_control\cy_pins_v2_10</v>
+<v>motor_control-000\motor_control\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
+<v>motor_control-000\motor_control\CyControlReg_v1_80.pdf</v>
+<v>motor_control-000\motor_control\mux_v1_10</v>
+<v>motor_control-000\motor_control\mux_v1_10\mux_v1_10.pdf</v>
+<v>motor_control-000\motor_control\TCPWM_P4_v2_0</v>
+<v>motor_control-000\motor_control\TCPWM_P4_v2_0\TCPWM_P4_v2_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>motor_control-000</v>
+<v>motor_control-000\motor_control</v>
+<v>motor_control-000\motor_control\PSoC 4 Architecture TRM</v>
+<v>motor_control-000\motor_control\PSoC 4200 BLE Family Datasheet</v>
+<v>motor_control-000\motor_control\System Reference Guides</v>
+<v>motor_control-000\motor_control\System Reference Guides\cy_boot_v5_20</v>
+<v>motor_control-000\motor_control\System Reference Guides\cy_lfclk_v1_0</v>
+<v>motor_control-000\motor_control\BLE_v2_30.pdf</v>
+<v>motor_control-000\motor_control\cy_clock_v2_20.pdf</v>
+<v>motor_control-000\motor_control\cy_constant_v1_0</v>
+<v>motor_control-000\motor_control\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>motor_control-000\motor_control\cy_pins_v2_10</v>
+<v>motor_control-000\motor_control\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
+<v>motor_control-000\motor_control\CyControlReg_v1_80.pdf</v>
+<v>motor_control-000\motor_control\mux_v1_10</v>
+<v>motor_control-000\motor_control\mux_v1_10\mux_v1_10.pdf</v>
+<v>motor_control-000\motor_control\TCPWM_P4_v2_0</v>
+<v>motor_control-000\motor_control\TCPWM_P4_v2_0\TCPWM_P4_v2_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

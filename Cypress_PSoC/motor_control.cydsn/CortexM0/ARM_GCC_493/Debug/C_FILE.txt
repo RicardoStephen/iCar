@@ -1,0 +1,1 @@
+'C:\Users\leander\Documents\PSoC Creator\car_v2\motor_control.cydsn\control.c' -o .o -T C_FILE -I 'C:\Users\leander\Documents\PSoC Creator\car_v2\motor_control.cydsn' -I 'C:\Users\leander\Documents\PSoC Creator\car_v2\motor_control.cydsn\Generated_Source\PSoC4' -f 'C:\Users\leander\Documents\PSoC Creator\car_v2\motor_control.cydsn\CortexM0\ARM_GCC_493\Debug\.deps\C_FILE.d'
