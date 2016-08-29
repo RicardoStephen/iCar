@@ -84,6 +84,7 @@ using wheels with better traction.
 *Figure 4: PSoC schematic*
 
 ![iCar iOS application icon](https://github.com/RicardoStephen/iCar/blob/master/media/UX_1.jpg)
+
 *Figure 5: iOS application icon*
 
 ![iCar iOS application launch scene](https://github.com/RicardoStephen/iCar/blob/master/media/UX_2.jpg)
