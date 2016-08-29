@@ -90,7 +90,9 @@ using wheels with better traction.
 *Figure 5: iOS application icon*
 
 ![iCar iOS application launch scene](https://github.com/RicardoStephen/iCar/blob/master/media/UX_2.jpg)
+
 *Figure 6: iOS application launch scene*
 
 ![iCar iOS application main scene](https://github.com/RicardoStephen/iCar/blob/master/media/UX_3.jpg)
+
 *Figure 7: iOS application main scene*
