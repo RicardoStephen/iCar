@@ -45,7 +45,7 @@ system, the whole project required by PSoC Creator can be found in the
 application was composed of a custom bluetooth service with one characteristic.
 This characteristic was associated with a 5-byte long attribute encoding control
 information for the two motors:  
-   [on/off] [1A/1B] [PWM1] [2A/2B] [PWM2]  
+> [on/off] [1A/1B] [PWM1] [2A/2B] [PWM2]  
 where each "[]" is a byte, and [x/y] is x if the byte is 1 or y if 0.
 
 **User Interface** The iCar can be controlled by the Swift-based iOS application
