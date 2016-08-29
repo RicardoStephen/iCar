@@ -23,10 +23,11 @@ originally came with a single motor to drive the two rear wheels, but a
 different pair of motors was used so the two wheels could be controlled
 independently.
 
-**H-Bridge** The schematic for the h-bridges can be seen in *Figure 3*. Ideally,
-N-MOSFETs would have been used for their higher switching speeds, efficiency,
-and power ratings. However, none were available, so a heterogeneous set of NPN
-and PNP transistors were used instead.
+**H-Bridge** The schematic for the h-bridges can be seen in *Figure 3*; the 
+associated schem file was designed using gEDA. For an ideal h-bridge, N-MOSFETs
+would have been used for their higher switching speeds, efficiency, and power
+ratings. However, none were available, so a heterogeneous set of NPN and PNP
+transistors were used instead.
 
 **Power Supply** Three 9V batteries with a common ground were used to power the
 vehicle. One battery powered the PSoC board, and the other two were each sent
